@@ -20,4 +20,14 @@ window.addEventListener("scroll", () => {
   });
 });
 
+window.addEventListener("load", () => {
+  const nombre = document.getElementById("nombre");
+  nombre.style.position = "relative";
+  nombre.style.top = "auto";
+  nombre.style.left = "auto";
+  nombre.style.transform = "none";
+  nombre.style.zIndex = "3";
+  nombre.style.color = "#f0f0f0";
+});
+
 year.textContent = new Date().getFullYear();
